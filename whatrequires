@@ -1,13 +1,4 @@
 # This file contains recursive sources that require this package
 R-PKI
 R-Rmpfr
-R-brms
-R-broom
-R-caret
-R-gmp
-R-modelr
-R-recipes
-R-rsconnect
-R-rstanarm
-R-shinystan
-R-tidyverse
+R-partitions
