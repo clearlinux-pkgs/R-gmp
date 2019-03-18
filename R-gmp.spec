@@ -4,7 +4,7 @@
 #
 Name     : R-gmp
 Version  : 0.5.13.5
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/gmp_0.5-13.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gmp_0.5-13.5.tar.gz
 Summary  : Multiple Precision Arithmetic
@@ -37,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552875973
+export SOURCE_DATE_EPOCH=1552896449
 
 %install
-export SOURCE_DATE_EPOCH=1552875973
+export SOURCE_DATE_EPOCH=1552896449
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
