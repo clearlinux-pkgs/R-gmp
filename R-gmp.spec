@@ -4,14 +4,13 @@
 #
 Name     : R-gmp
 Version  : 0.5.13.5
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/gmp_0.5-13.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gmp_0.5-13.5.tar.gz
 Summary  : Multiple Precision Arithmetic
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-gmp-lib = %{version}-%{release}
-Requires: R-sfsmisc
 BuildRequires : R-Rmpfr
 BuildRequires : R-sfsmisc
 BuildRequires : buildreq-R
@@ -38,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552871424
+export SOURCE_DATE_EPOCH=1552875973
 
 %install
-export SOURCE_DATE_EPOCH=1552871424
+export SOURCE_DATE_EPOCH=1552875973
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
