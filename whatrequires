@@ -1,5 +1,4 @@
 # This file contains recursive sources that require this package
-R-DescTools
 R-PKI
 R-Rmpfr
 R-partitions
