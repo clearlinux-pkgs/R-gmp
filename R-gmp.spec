@@ -4,16 +4,13 @@
 #
 Name     : R-gmp
 Version  : 0.5.13.6
-Release  : 31
+Release  : 32
 URL      : https://cran.r-project.org/src/contrib/gmp_0.5-13.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gmp_0.5-13.6.tar.gz
 Summary  : Multiple Precision Arithmetic
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-gmp-lib = %{version}-%{release}
-Requires: R-sfsmisc
-BuildRequires : R-Rmpfr
-BuildRequires : R-sfsmisc
 BuildRequires : buildreq-R
 BuildRequires : gmp-dev
 BuildRequires : mpfr-dev
@@ -32,21 +29,22 @@ lib components for the R-gmp package.
 
 %prep
 %setup -q -c -n gmp
+cd %{_builddir}/gmp
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1579882318
+export SOURCE_DATE_EPOCH=1589401384
 
 %install
-export SOURCE_DATE_EPOCH=1579882318
+export SOURCE_DATE_EPOCH=1589401384
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
