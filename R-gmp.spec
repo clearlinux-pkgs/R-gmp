@@ -4,7 +4,7 @@
 #
 Name     : R-gmp
 Version  : 0.6.0
-Release  : 35
+Release  : 36
 URL      : https://cran.r-project.org/src/contrib/gmp_0.6-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gmp_0.6-0.tar.gz
 Summary  : Multiple Precision Arithmetic
